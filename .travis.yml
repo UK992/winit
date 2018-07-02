@@ -21,6 +21,7 @@ matrix:
         apt:
           packages:
             - gcc-multilib
+            - gcc-aarch64-linux-gnu
             - libc6-dev-arm64-cross
     # Linux 32bit
     - env: TARGET=i686-unknown-linux-gnu
