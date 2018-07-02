@@ -5,7 +5,7 @@ cache: cargo
 matrix:
   include:
       # ARMv6 Linux
-    - env: TARGET=arm-unknown-linux-gnueabi
+    - env: TARGET=arm-unknown-linux-gnueabi RUSTFLAGS=-Clinker=arm-linux-gnueabi-gcc
       os: linux
       rust: nightly
       addons:
