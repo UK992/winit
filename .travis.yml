@@ -21,11 +21,16 @@ matrix:
         apt:
           packages: &i686_packages
             - gcc-multilib
-            - gcc-arm-linux-gnueabi
+            - gcc-arm-linux-gnueabihf
     # ARM64 Linux
     - env: TARGET=aarch64-unknown-linux-gnu
       os: linux
       rust: nightly
+      addons:
+        apt:
+          packages: &i686_packages
+            - gcc-multilib
+            - gcc-aarch64-linux-gnu
     # Linux 32bit
     - env: TARGET=i686-unknown-linux-gnu
       os: linux
