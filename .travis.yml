@@ -30,7 +30,6 @@ matrix:
         apt:
           packages: &i686_packages
             - gcc-multilib
-            - gcc-aarch64-linux-gnu
     # Linux 32bit
     - env: TARGET=i686-unknown-linux-gnu
       os: linux
