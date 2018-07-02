@@ -13,15 +13,6 @@ matrix:
           packages: &i686_packages
             - gcc-multilib
             - gcc-arm-linux-gnueabi
-      # ARMv7 Linux
-    - env: TARGET=armv7-unknown-linux-gnueabihf
-      os: linux
-      rust: nightly
-      addons:
-        apt:
-          packages: &i686_packages
-            - gcc-multilib
-            - gcc-arm-linux-gnueabihf
     # ARM64 Linux
     - env: TARGET=aarch64-unknown-linux-gnu
       os: linux
